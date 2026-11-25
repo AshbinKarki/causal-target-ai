@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "CausalTarget AI: Causal AI for Intelligent Customer Targeting and Business Decision Optimization"
+message: "Cite this software separately from the Criteo dataset described in DATA_LICENSE.md."
+type: software
+version: 1.0.0
+date-released: 2026-11-25
+authors:
+  - family-names: Karki
+    given-names: Ashbin
+license: MIT

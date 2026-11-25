@@ -1,0 +1,15 @@
+profile: demo
+sample_rows: 500000
+seed: 42
+trees: 150
+optuna_trials: 5
+bootstrap_reps: 500
+crossfit_folds: 3
+threads: 4
+causal_forest: true
+forest_rows: 60000
+assignment_probability: null
+budget: 1500
+intervention_cost: 0.05
+conversion_value: 50
+capacity_fraction: 0.3
