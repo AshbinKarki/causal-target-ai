@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-25",
+  "pytest_passed": 48,
+  "pytest_failed": 0,
+  "package_statement_coverage_percent": 88,
+  "ruff_check": "passed",
+  "ruff_format_check": "passed",
+  "bundle_integrity": "passed",
+  "configured_secret_patterns": "no matches",
+  "streamlit_pages_verified": 8,
+  "health_http_status": 200,
+  "browser_export_rows": 100000,
+  "browser_export_recommended": 8408,
+  "docker_local": "unavailable",
+  "full_scale_training": "not executed",
+  "public_deployment": "not verified"
+}

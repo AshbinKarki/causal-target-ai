@@ -32,8 +32,17 @@ Deliver a reproducible Criteo uplift analysis, tested optimization engine, eight
 - Local server health responds HTTP 200. Browser checked navigation, simulator and actual CSV export: 100,000 scored records, 8,408 recommended at default assumptions.
 - Captured real desktop and mobile screenshots under docs/screenshots.
 
+## Latest verification
+- Full local suite: 48 passed; 88% statement coverage. Ruff lint/format and portable bundle consistency pass.
+- Paired comparison added: DR versus predictive targeting = -4.14 conversions, 95% normal CI [-36.28, +27.99]; superiority not established.
+- Random baseline is now identical across evaluation and financial tables.
+- Completed README, technical architecture/ADRs, data dictionary, mathematical methodology, model card, deployment/troubleshooting, portfolio metadata/case study and career package with 45 interview Q&As.
+- Docker/Compose and GitHub Actions configured. No Docker executable or GPU tooling is present on this host.
+- Separate minimal dashboard dependency lock contains 36 packages; a clean runtime environment is being smoke-tested.
+- Local Git foundation and implementation milestone commits created with GitHub no-reply identity. Branch: codex/causal-target-ai.
+
 ## In progress
-Paired policy uncertainty comparison, consistent random baseline, responsive refinements, documentation/career package, container/CI configuration and repository publication review. No remote publication or public deployment claimed yet.
+Final publication commit, GitHub repository/PR creation, remote CI inspection, and deployment access check. No remote publication or public deployment claimed yet.
 
 ## Important measured finding
 At 30% targeting, DR-learner estimates 116.95 held-out incremental conversions versus predictive targeting's 121.10. Do not claim causal superiority. Default profit optimization selects 8,408 observations and simulates $5,964.68 incremental profit from $420.40 spend, using assumed $50 contribution and $0.05 treatment cost; these are not realized revenue/savings.

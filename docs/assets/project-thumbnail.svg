@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+<title id="title">CausalTarget AI portfolio project</title><desc id="description">Causal targeting, 500,000 real observations analyzed, five causal learners. Chart from actual held-out DR-learner uplift evaluation.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#201b36"/><stop offset="1" stop-color="#51408c"/></linearGradient></defs>
+<rect width="1200" height="630" rx="24" fill="url(#bg)"/>
+<rect x="65" y="65" width="57" height="57" rx="16" fill="#8975fa"/>
+<path d="m94 76 17 18-17 17-17-17Z" fill="none" stroke="white" stroke-width="3"/>
+<text x="145" y="102" fill="white" font-family="Arial,sans-serif" font-size="27" font-weight="bold">CausalTarget AI</text>
+<text x="65" y="211" fill="#c3b8ef" font-family="Arial,sans-serif" font-size="14" letter-spacing="4">EVIDENCE BEFORE INTERVENTION</text>
+<text x="65" y="282" fill="white" font-family="Arial,sans-serif" font-size="48" font-weight="bold">Who changes</text>
+<text x="65" y="343" fill="white" font-family="Arial,sans-serif" font-size="48" font-weight="bold">because of treatment?</text>
+<text x="65" y="396" fill="#ddd5f4" font-family="Arial,sans-serif" font-size="20">Causal inference. Policy evaluation. Budget decisions.</text>
+<rect x="65" y="462" width="185" height="62" rx="13" fill="#ffffff" fill-opacity=".08"/>
+<text x="83" y="489" fill="white" font-family="Arial,sans-serif" font-size="22" font-weight="bold">500,000</text>
+<text x="83" y="509" fill="#cec3eb" font-family="Arial,sans-serif" font-size="12">REAL OBSERVATIONS ANALYZED</text>
+<rect x="267" y="462" width="185" height="62" rx="13" fill="#ffffff" fill-opacity=".08"/>
+<text x="285" y="489" fill="white" font-family="Arial,sans-serif" font-size="22" font-weight="bold">5 causal learners</text>
+<text x="285" y="509" fill="#cec3eb" font-family="Arial,sans-serif" font-size="12">100,000 HELD-OUT ROWS</text>
+<path d="M720 200V450H1080" fill="none" stroke="#bdb0df" stroke-opacity=".4"/>
+<path d="M720 450 1080 220" fill="none" stroke="#bdb0df" stroke-dasharray="6 7" opacity=".5"/>
+<polyline points="720.0,450.0 723.6,327.9 727.2,288.8 730.8,294.7 734.4,286.0 738.0,287.2 741.6,278.1 745.2,272.9 748.8,267.7 752.4,270.6 756.0,263.7 759.6,262.0 763.2,258.5 766.8,258.5 770.4,256.8 774.0,256.8 777.6,255.1 781.2,255.1 784.8,255.1 788.4,253.3 792.0,253.3 795.6,253.3 799.2,253.3 802.8,253.3 806.4,253.3 810.0,253.3 813.6,253.3 817.2,253.3 820.8,253.3 824.4,253.3 828.0,253.3 831.6,253.3 835.2,253.3 838.8,253.3 842.4,263.2 846.0,263.2 849.6,258.0 853.2,258.0 856.8,258.0 860.4,258.0 864.0,256.3 867.6,254.5 871.2,254.5 874.8,251.1 878.4,251.1 882.0,249.4 885.6,249.4 889.2,247.6 892.8,247.6 896.4,247.6 900.0,247.6 903.6,245.9 907.2,245.9 910.8,245.9 914.4,245.9 918.0,242.4 921.6,242.4 925.2,242.4 928.8,242.4 932.4,242.4 936.0,242.4 939.6,239.0 943.2,239.0 946.8,239.0 950.4,237.3 954.0,235.5 957.6,235.5 961.2,235.5 964.8,235.5 968.4,235.5 972.0,233.8 975.6,233.8 979.2,232.1 982.8,230.4 986.4,228.6 990.0,225.2 993.6,225.2 997.2,225.2 1000.8,223.5 1004.4,223.5 1008.0,223.5 1011.6,223.5 1015.2,223.5 1018.8,223.5 1022.4,223.5 1026.0,223.5 1029.6,223.5 1033.2,223.5 1036.8,223.5 1040.4,223.5 1044.0,223.5 1047.6,221.7 1051.2,221.7 1054.8,220.0 1058.4,229.8 1062.0,229.8 1065.6,229.8 1069.2,228.1 1072.8,228.1 1076.4,226.4 1080.0,236.3" fill="none" stroke="#65dac4" stroke-width="4" stroke-linejoin="round"/>
+<text x="720" y="494" fill="#ddd5f4" font-family="Arial,sans-serif" font-size="13">HELD-OUT UPLIFT · DR LEARNER</text>
+<text x="65" y="582" fill="#c3b8ef" font-family="Arial,sans-serif" font-size="15">Ashbin Karki · Data Science portfolio</text>
+<text x="720" y="582" fill="#c3b8ef" font-family="Arial,sans-serif" font-size="11">Criteo v2.1 · Benchmark, not realized revenue</text>
+</svg>

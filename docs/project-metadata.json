@@ -1,0 +1,57 @@
+{
+  "slug": "causal-target-ai",
+  "title": "CausalTarget AI",
+  "subtitle": "Causal AI for Intelligent Customer Targeting and Business Decision Optimization",
+  "author": "Ashbin Karki",
+  "category": "Data Science / Causal Inference",
+  "summary": "An experimental marketing decision platform connecting calibrated prediction, uplift modeling and budget optimization.",
+  "repository_url": null,
+  "live_url": null,
+  "thumbnail": "docs/assets/project-thumbnail.svg",
+  "screenshots": [
+    "docs/screenshots/executive-dashboard.jpg",
+    "docs/screenshots/budget-simulator.jpg",
+    "docs/screenshots/causal-analysis.jpg"
+  ],
+  "stack": [
+    "Python",
+    "uv",
+    "Polars",
+    "DuckDB",
+    "scikit-learn",
+    "LightGBM",
+    "EconML",
+    "MLflow",
+    "Streamlit",
+    "Plotly",
+    "Docker",
+    "GitHub Actions"
+  ],
+  "verified_metrics": {
+    "source_rows_scanned": 13979592,
+    "rows_analyzed": 500000,
+    "heldout_rows": 100000,
+    "selected_predictive_roc_auc": 0.9649539093469902,
+    "selected_predictive_average_precision": 0.2424223181031159,
+    "selected_causal_qini": 0.0006561007595567,
+    "heldout_incremental_conversions_at_30pct": 116.950649701438
+  },
+  "simulation": {
+    "budget": 1500,
+    "cost_per_treatment": 0.05,
+    "contribution_per_conversion": 50,
+    "targeted": 8408,
+    "spend": 420.4,
+    "model_based_incremental_profit": 5964.678467665649,
+    "not_realized_company_revenue": true
+  },
+  "limitations": [
+    "Privacy-sampled benchmark does not identify original campaign lift",
+    "No significant paired advantage over predictive targeting",
+    "No actual financial outcomes",
+    "No public deployment verified"
+  ],
+  "code_license": "MIT",
+  "data_license": "CC-BY-NC-SA-4.0",
+  "results_generated_at": "2026-11-25T09:26:35.596160+00:00"
+}
