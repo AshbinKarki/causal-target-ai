@@ -1,0 +1,35 @@
+name: Quality and reproducibility
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
+        with:
+          version: "0.13.10"
+          enable-cache: true
+      - run: uv sync --frozen --extra forest
+      - run: uv run ruff check src app tests scripts
+      - run: uv run ruff format --check src app tests scripts
+      - run: uv run pytest --cov=causal_target --cov-report=term-missing --junitxml=reports/qa/junit.xml
+      - run: uv run python scripts/secret_scan.py
+      - run: uv run python scripts/verify_bundle.py
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: docker build -t causal-target-ai .
+      - name: Container health smoke test
+        run: |
+          docker run -d --name causal-target -p 8501:8501 causal-target-ai
+          for attempt in $(seq 1 30); do
+            if curl --fail http://localhost:8501/_stcore/health; then exit 0; fi
+            sleep 2
+          done
+          docker logs causal-target
+          exit 1

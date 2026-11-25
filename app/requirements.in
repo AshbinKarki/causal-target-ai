@@ -1,0 +1,6 @@
+# Minimal precomputed dashboard runtime. Full training uses pyproject.toml + uv.lock.
+streamlit==1.67.0
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==23.0.1
+plotly==6.9.0
