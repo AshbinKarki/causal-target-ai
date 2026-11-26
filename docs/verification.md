@@ -45,7 +45,7 @@ See PROJECT_STATUS.md for remote publication and CI updates, and reports/metrics
 ## Remote publication and Linux verification
 
 - Public repository: [AshbinKarki/causal-target-ai](https://github.com/AshbinKarki/causal-target-ai).
-- Complete implementation is on `codex/causal-target-ai`; [PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) is open for review, not merged.
+- Complete implementation is on `main`; [PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) was merged at `a7a581f48660446953c93625f379f8d1cd77893e`. The remote main tree was verified to contain all 128 project files.
 - Verified revision: `8ec108b43f0f5d8e8bb451589e267631c2479e13`.
 - [GitHub Actions run 45691060867](https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867): both `test` and `container` jobs passed.
 - Ubuntu / Python 3.12.16: **48 tests passed, 88% coverage**, Ruff lint/format passed, focused secret-pattern scan passed, real-data report-bundle check passed.

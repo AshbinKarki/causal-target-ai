@@ -144,12 +144,12 @@ flowchart LR
     if metadata.get("live_url"):
         hosting_status = f"Public demonstration deployed and browser-verified on 2026-11-25: [Open CausalTarget AI]({metadata['live_url']}). All eight pages, zero-budget recalculation and a 100,000-row recommendation export were checked."
     if metadata.get("repository_url"):
-        publication = f"""[Published repository]({metadata["repository_url"]}) · [Complete implementation branch]({metadata["implementation_url"]}) · [Review PR #1]({metadata["pull_request_url"]}) · [Verified Linux CI]({metadata["verification_url"]})
+        publication = f"""[Published repository]({metadata["repository_url"]}) · [Complete implementation branch]({metadata["implementation_url"]}) · [Merged PR #1]({metadata["pull_request_url"]}) · [Verified Linux CI]({metadata["verification_url"]})
 
-The implementation is on `codex/causal-target-ai` while PR #1 remains open. Clone that branch to reproduce this delivery:
+The complete implementation is on `main` following the merge of PR #1. Clone the repository to reproduce this delivery:
 
 ```bash
-git clone --branch codex/causal-target-ai {metadata["repository_url"]}.git
+git clone --branch main {metadata["repository_url"]}.git
 cd causal-target-ai
 ```"""
     if metadata.get("live_url"):

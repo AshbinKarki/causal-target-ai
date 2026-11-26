@@ -39,8 +39,8 @@ Deliver a reproducible Criteo uplift analysis, tested optimization engine, eight
 - Completed README, technical architecture/ADRs, data dictionary, mathematical methodology, model card, deployment/troubleshooting, portfolio metadata/case study and career package with 45 interview Q&As.
 - Docker/Compose and GitHub Actions verified remotely: image build and running-container health smoke test passed. No Docker executable or GPU tooling is present on this host.
 - Separate minimal dashboard dependency lock contains 36 packages; all eight pages rendered successfully in that clean environment too.
-- Git milestone commits use GitHub no-reply identity. Public repository: https://github.com/AshbinKarki/causal-target-ai. Complete implementation branch: codex/causal-target-ai.
-- Review PR #1: https://github.com/AshbinKarki/causal-target-ai/pull/1 (open, not merged).
+- Git milestone commits use GitHub no-reply identity. Public repository: https://github.com/AshbinKarki/causal-target-ai. Complete implementation branch: main.
+- Review PR #1: https://github.com/AshbinKarki/causal-target-ai/pull/1 (merged at a7a581f48660446953c93625f379f8d1cd77893e).
 - Linux verification at 8ec108b43f0f5d8e8bb451589e267631c2479e13: https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867. Tests, Ruff, report consistency, focused secret scan, Docker build and health passed.
 - Linux exposed a pytest entry-point import-path issue; explicit project/source paths fixed it and both local and remote suites passed again.
 - Refreshed actual desktop/mobile screenshots. Shut down the owned local preview after verification.
@@ -52,7 +52,7 @@ Deliver a reproducible Criteo uplift analysis, tested optimization engine, eight
 - Actual hosted screenshot: docs/screenshots/live-dashboard.jpg. Repository, PR, CI and live links are recorded in metadata and documentation.
 
 ## Delivery status
-Implementation, sampled real-data execution, local/Linux tests, Docker verification, GitHub publication, public demonstration deployment, documentation, screenshots and career package are complete. PR #1 is open for review. Full-scale model training and a real marketing campaign were not executed. The evidence files identify the verified code revision; the PR checks show validation for subsequent documentation commits.
+Implementation, sampled real-data execution, local/Linux tests, Docker verification, GitHub publication, public demonstration deployment, documentation, screenshots and career package are complete. PR #1 is merged into main; all 128 remote project files were verified and local main was fast-forwarded to the merge. Full-scale model training and a real marketing campaign were not executed. The evidence files identify the verified code revision; the PR checks show validation for subsequent documentation commits.
 
 ## Important measured finding
 At 30% targeting, DR-learner estimates 116.95 held-out incremental conversions versus predictive targeting's 121.10. Do not claim causal superiority. Default profit optimization selects 8,408 observations and simulates $5,964.68 incremental profit from $420.40 spend, using assumed $50 contribution and $0.05 treatment cost; these are not realized revenue/savings.
@@ -64,4 +64,4 @@ At 30% targeting, DR-learner estimates 116.95 held-out incremental conversions v
 - MIT for original code; third-party dataset and adapted data retain separate attribution/noncommercial/share-alike terms.
 
 ## Continuation
-Read this file and inspect Git status before any further work. To reproduce locally, run `.\scripts\run.ps1 -Task app`; the owned preview was stopped after QA. The public demonstration runs independently on Streamlit. If merging PR #1, update its hosting source branch to main. Do not overwrite unrelated changes or fabricate missing evidence.
+Read this file and inspect Git status before any further work. To reproduce locally, run `.\scripts\run.ps1 -Task app`; the owned preview was stopped after QA. The public demonstration runs independently on Streamlit. The existing hosted app still tracks the retained implementation branch; configure future hosting updates to follow main when needed. Do not overwrite unrelated changes or fabricate missing evidence.

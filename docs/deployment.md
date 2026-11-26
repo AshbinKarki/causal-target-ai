@@ -16,7 +16,7 @@ Windows uses `.dashboard-venv\Scripts\python.exe` in both commands. The main scr
 
 Recommended for this noncommercial portfolio demonstration. [Official deployment documentation](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app) and [dependency routing](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/app-dependencies) were checked during development.
 
-1. Use the published repository `AshbinKarki/causal-target-ai` and branch `codex/causal-target-ai` while [PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) remains open.
+1. Use the published repository `AshbinKarki/causal-target-ai` and branch `main`; [PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) is merged.
 2. Sign in to Community Cloud and select **Create app**, that repository and branch.
 3. Use `app/main.py` as the entry point and **Python 3.12** in advanced settings.
 4. Keep `app/requirements.txt` beside that entry point so the minimal runtime is selected. No app secrets are needed.
@@ -24,7 +24,7 @@ Recommended for this noncommercial portfolio demonstration. [Official deployment
 
 The `reports/metrics/`, `reports/figures/`, report Markdown, original code and data-license notice must be present in the deployed revision. Hosting availability/resources can change; inspect the account's current terms and do not enable a paid plan without authorization.
 
-**Deployment verified on 2026-11-25:** [CausalTarget AI](https://causal-target-ai.streamlit.app/) is running publicly on Community Cloud. The account owner completed sign-in and terms acceptance. Build logs confirmed Python 3.12.16 and dependency installation from `app/requirements.txt`. All eight views rendered, the zero-budget scenario recalculated, and a live recommendation CSV contained 100,000 rows with 8,408 recommendations. Public sharing was verified enabled. Source changes pushed to `codex/causal-target-ai` update this deployment; change the hosting branch after merging PR #1 if adopting `main`.
+**Deployment verified on 2026-11-25:** [CausalTarget AI](https://causal-target-ai.streamlit.app/) is running publicly on Community Cloud. The account owner completed sign-in and terms acceptance. Build logs confirmed Python 3.12.16 and dependency installation from `app/requirements.txt`. All eight views rendered, the zero-budget scenario recalculated, and a live recommendation CSV contained 100,000 rows with 8,408 recommendations. Public sharing was verified enabled. The existing verified deployment still tracks `codex/causal-target-ai`, which contains the merged application code. New deployments can use `main`; update the existing hosting source separately when future application changes need to follow `main`.
 
 ## Docker
 

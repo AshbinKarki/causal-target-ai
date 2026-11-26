@@ -6,7 +6,7 @@
   "category": "Data Science / Causal Inference",
   "summary": "An experimental marketing decision platform connecting calibrated prediction, uplift modeling and budget optimization.",
   "repository_url": "https://github.com/AshbinKarki/causal-target-ai",
-  "implementation_url": "https://github.com/AshbinKarki/causal-target-ai/tree/codex/causal-target-ai",
+  "implementation_url": "https://github.com/AshbinKarki/causal-target-ai/tree/main",
   "pull_request_url": "https://github.com/AshbinKarki/causal-target-ai/pull/1",
   "verification_url": "https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867",
   "live_url": "https://causal-target-ai.streamlit.app/",

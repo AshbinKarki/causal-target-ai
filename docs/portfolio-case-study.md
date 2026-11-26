@@ -7,12 +7,12 @@ An end-to-end Data Science portfolio project connecting randomized experimentati
 
 **[Open the live dashboard](https://causal-target-ai.streamlit.app/)**
 
-[Published repository](https://github.com/AshbinKarki/causal-target-ai) · [Complete implementation branch](https://github.com/AshbinKarki/causal-target-ai/tree/codex/causal-target-ai) · [Review PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) · [Verified Linux CI](https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867)
+[Published repository](https://github.com/AshbinKarki/causal-target-ai) · [Complete implementation branch](https://github.com/AshbinKarki/causal-target-ai/tree/main) · [Merged PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) · [Verified Linux CI](https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867)
 
-The implementation is on `codex/causal-target-ai` while PR #1 remains open. Clone that branch to reproduce this delivery:
+The complete implementation is on `main` following the merge of PR #1. Clone the repository to reproduce this delivery:
 
 ```bash
-git clone --branch codex/causal-target-ai https://github.com/AshbinKarki/causal-target-ai.git
+git clone --branch main https://github.com/AshbinKarki/causal-target-ai.git
 cd causal-target-ai
 ```
 
