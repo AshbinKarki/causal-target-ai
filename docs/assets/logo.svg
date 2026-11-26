@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="120" viewBox="0 0 620 120" role="img" aria-labelledby="title">
+  <title id="title">CausalTarget AI — Decision Intelligence</title>
+  <rect x="8" y="18" width="78" height="78" rx="21" fill="#7463ed"/>
+  <path d="M47 32 73 57 47 82 21 57Z" fill="none" stroke="white" stroke-width="4"/>
+  <circle cx="47" cy="57" r="7" fill="white"/>
+  <text x="106" y="65" fill="#29283e" font-family="Arial,sans-serif" font-size="42" font-weight="700">CausalTarget <tspan fill="#7463ed">AI</tspan></text>
+  <text x="108" y="91" fill="#77778d" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">DECISION INTELLIGENCE</text>
+</svg>

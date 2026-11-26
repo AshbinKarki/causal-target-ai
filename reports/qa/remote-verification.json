@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-25",
+  "repository_url": "https://github.com/AshbinKarki/causal-target-ai",
+  "pull_request_url": "https://github.com/AshbinKarki/causal-target-ai/pull/1",
+  "verified_code_commit": "8ec108b43f0f5d8e8bb451589e267631c2479e13",
+  "workflow_run_url": "https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867",
+  "test_job": "success",
+  "pytest_passed": 48,
+  "package_statement_coverage_percent": 88,
+  "ruff_lint_and_format": "passed",
+  "report_bundle": "passed",
+  "configured_secret_patterns": "no matches",
+  "docker_image_build": "passed",
+  "container_health_smoke": "passed",
+  "public_hosting": "deployed and browser verified",
+  "live_url": "https://causal-target-ai.streamlit.app/",
+  "hosted_python": "3.12.16",
+  "hosted_pages_verified": 8,
+  "hosted_zero_budget_recalculation": "passed",
+  "hosted_recommendation_export_rows": 100000,
+  "hosted_recommendation_export_selected": 8408,
+  "public_sharing": "enabled"
+}

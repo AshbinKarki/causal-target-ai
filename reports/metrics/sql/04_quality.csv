@@ -1,0 +1,2 @@
+total_rows,unique_source_rows,invalid_assignments,missing_outcomes,exposed_controls
+500000,500000,0.0,0.0,0.0
