@@ -5,8 +5,11 @@
   "author": "Ashbin Karki",
   "category": "Data Science / Causal Inference",
   "summary": "An experimental marketing decision platform connecting calibrated prediction, uplift modeling and budget optimization.",
-  "repository_url": null,
-  "live_url": null,
+  "repository_url": "https://github.com/AshbinKarki/causal-target-ai",
+  "implementation_url": "https://github.com/AshbinKarki/causal-target-ai/tree/codex/causal-target-ai",
+  "pull_request_url": "https://github.com/AshbinKarki/causal-target-ai/pull/1",
+  "verification_url": "https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867",
+  "live_url": "https://causal-target-ai.streamlit.app/",
   "thumbnail": "docs/assets/project-thumbnail.svg",
   "screenshots": [
     "docs/screenshots/executive-dashboard.jpg",
@@ -49,7 +52,7 @@
     "Privacy-sampled benchmark does not identify original campaign lift",
     "No significant paired advantage over predictive targeting",
     "No actual financial outcomes",
-    "No public deployment verified"
+    "Portfolio demonstration only; no live marketing campaign"
   ],
   "code_license": "MIT",
   "data_license": "CC-BY-NC-SA-4.0",

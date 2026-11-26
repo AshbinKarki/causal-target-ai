@@ -2,6 +2,17 @@
 
 # CausalTarget AI
 
+**[Open the live dashboard](https://causal-target-ai.streamlit.app/)**
+
+[Published repository](https://github.com/AshbinKarki/causal-target-ai) · [Complete implementation branch](https://github.com/AshbinKarki/causal-target-ai/tree/codex/causal-target-ai) · [Review PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) · [Verified Linux CI](https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867)
+
+The implementation is on `codex/causal-target-ai` while PR #1 remains open. Clone that branch to reproduce this delivery:
+
+```bash
+git clone --branch codex/causal-target-ai https://github.com/AshbinKarki/causal-target-ai.git
+cd causal-target-ai
+```
+
 ### Causal AI for Intelligent Customer Targeting and Business Decision Optimization
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB) ![Streamlit](https://img.shields.io/badge/App-Streamlit-FF4B4B) ![Code license](https://img.shields.io/badge/Code-MIT-7463ed) ![Data license](https://img.shields.io/badge/Data-CC_BY--NC--SA_4.0-16a994)
@@ -186,7 +197,7 @@ The monitoring example compares a dataset with itself to demonstrate invocation;
 docker compose up --build
 ```
 
-The non-root container serves precomputed reports on port 8501 with a health check. Docker is not installed on the development host, so local image execution is **not verified**; CI includes a build and health smoke test. Streamlit Community Cloud is the recommended demonstration host; `app/requirements.txt` is a separate hashed runtime lock. Select Python 3.12 and `app/main.py`. No public deployment URL is claimed. [Deployment guide](docs/deployment.md).
+The non-root container serves precomputed reports on port 8501 with a health check. Docker is not installed on the development host; the image build and container health check **passed in Linux GitHub Actions**. See [verification evidence](docs/verification.md) for the exact revision and run. Streamlit Community Cloud hosts the demonstration using Python 3.12, `app/main.py` and the separate hashed runtime lock `app/requirements.txt`. Public demonstration deployed and browser-verified on 2026-11-25: [Open CausalTarget AI](https://causal-target-ai.streamlit.app/). All eight pages, zero-budget recalculation and a 100,000-row recommendation export were checked. [Deployment guide](docs/deployment.md).
 
 ## Repository map
 

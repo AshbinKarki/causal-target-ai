@@ -41,6 +41,9 @@ def main():
         "category": "Data Science / Causal Inference",
         "summary": "An experimental marketing decision platform connecting calibrated prediction, uplift modeling and budget optimization.",
         "repository_url": old.get("repository_url"),
+        "implementation_url": old.get("implementation_url"),
+        "pull_request_url": old.get("pull_request_url"),
+        "verification_url": old.get("verification_url"),
         "live_url": old.get("live_url"),
         "thumbnail": "docs/assets/project-thumbnail.svg",
         "screenshots": [
@@ -84,7 +87,7 @@ def main():
             "Privacy-sampled benchmark does not identify original campaign lift",
             "No significant paired advantage over predictive targeting",
             "No actual financial outcomes",
-            "No public deployment verified",
+            "Portfolio demonstration only; no live marketing campaign",
         ],
         "code_license": "MIT",
         "data_license": "CC-BY-NC-SA-4.0",
@@ -136,9 +139,26 @@ flowchart LR
     K --> L[Versioned reports + model artifacts]
     L --> M[Budget optimizer + Streamlit]
 ```"""
+    publication = ""
+    hosting_status = "No public deployment URL is claimed."
+    if metadata.get("live_url"):
+        hosting_status = f"Public demonstration deployed and browser-verified on 2026-11-25: [Open CausalTarget AI]({metadata['live_url']}). All eight pages, zero-budget recalculation and a 100,000-row recommendation export were checked."
+    if metadata.get("repository_url"):
+        publication = f"""[Published repository]({metadata["repository_url"]}) · [Complete implementation branch]({metadata["implementation_url"]}) · [Review PR #1]({metadata["pull_request_url"]}) · [Verified Linux CI]({metadata["verification_url"]})
+
+The implementation is on `codex/causal-target-ai` while PR #1 remains open. Clone that branch to reproduce this delivery:
+
+```bash
+git clone --branch codex/causal-target-ai {metadata["repository_url"]}.git
+cd causal-target-ai
+```"""
+    if metadata.get("live_url"):
+        publication = f"**[Open the live dashboard]({metadata['live_url']})**\n\n" + publication
     readme = f"""<p align="center"><img src="docs/assets/logo.svg" width="370" alt="CausalTarget AI" /></p>
 
 # CausalTarget AI
+
+{publication}
 
 ### Causal AI for Intelligent Customer Targeting and Business Decision Optimization
 
@@ -288,7 +308,7 @@ The monitoring example compares a dataset with itself to demonstrate invocation;
 docker compose up --build
 ```
 
-The non-root container serves precomputed reports on port 8501 with a health check. Docker is not installed on the development host, so local image execution is **not verified**; CI includes a build and health smoke test. Streamlit Community Cloud is the recommended demonstration host; `app/requirements.txt` is a separate hashed runtime lock. Select Python 3.12 and `app/main.py`. No public deployment URL is claimed. [Deployment guide](docs/deployment.md).
+The non-root container serves precomputed reports on port 8501 with a health check. Docker is not installed on the development host; the image build and container health check **passed in Linux GitHub Actions**. See [verification evidence](docs/verification.md) for the exact revision and run. Streamlit Community Cloud hosts the demonstration using Python 3.12, `app/main.py` and the separate hashed runtime lock `app/requirements.txt`. {hosting_status} [Deployment guide](docs/deployment.md).
 
 ## Repository map
 
@@ -332,6 +352,8 @@ Dataset citation: Diemert, Betlei, Renaudin and Amini (2018), *A Large Scale Ben
 ## Summary
 An end-to-end Data Science portfolio project connecting randomized experimentation, purchase prediction, causal machine learning and marketing allocation in a working decision-support application.
 
+{publication}
+
 ## Business problem and decision
 High purchase probability does not imply high incremental response. The project separates those questions, estimates CATE, and allocates a constrained budget only where expected incremental contribution is positive.
 
@@ -356,7 +378,7 @@ At explicitly assumed $0.05 intervention cost and $50 contribution, the optimize
 The historical download host had disappeared; the publisher-owned Hugging Face mirror and published checksum preserved provenance. Rare control conversions required cautious interpretation. A complex causal learner did not establish superiority over predictive targeting, illustrating why paired held-out evaluation matters. Uniform costs permit exact sorting without unnecessary optimization infrastructure. Precomputed artifacts separate expensive research from a lightweight interactive demo.
 
 ## Boundaries
-Privacy sampling obscures original campaign lift; features cannot be given invented business meanings. No raw customer identity or actual cost/revenue data is available. Forest training is resource-capped and full-scale training was not executed. Deployment configuration is prepared; public URL is recorded only after verified hosting. Repository and live links, when verified, are stored in project-metadata.json.
+Privacy sampling obscures original campaign lift; features cannot be given invented business meanings. No raw customer identity or actual cost/revenue data is available. Forest training is resource-capped and full-scale training was not executed. {hosting_status} Verified repository and live links are stored in project-metadata.json.
 
 Author: Ashbin Karki. AI-assisted portfolio development; no claimed employer deployment. Code MIT; Criteo data-derived artifacts CC BY-NC-SA 4.0.
 """,

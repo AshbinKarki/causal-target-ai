@@ -13,5 +13,5 @@
   "browser_export_recommended": 8408,
   "docker_local": "unavailable",
   "full_scale_training": "not executed",
-  "public_deployment": "not verified"
+  "public_deployment": "see remote-verification.json"
 }

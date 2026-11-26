@@ -5,6 +5,17 @@
 ## Summary
 An end-to-end Data Science portfolio project connecting randomized experimentation, purchase prediction, causal machine learning and marketing allocation in a working decision-support application.
 
+**[Open the live dashboard](https://causal-target-ai.streamlit.app/)**
+
+[Published repository](https://github.com/AshbinKarki/causal-target-ai) · [Complete implementation branch](https://github.com/AshbinKarki/causal-target-ai/tree/codex/causal-target-ai) · [Review PR #1](https://github.com/AshbinKarki/causal-target-ai/pull/1) · [Verified Linux CI](https://github.com/AshbinKarki/causal-target-ai/actions/runs/45691060867)
+
+The implementation is on `codex/causal-target-ai` while PR #1 remains open. Clone that branch to reproduce this delivery:
+
+```bash
+git clone --branch codex/causal-target-ai https://github.com/AshbinKarki/causal-target-ai.git
+cd causal-target-ai
+```
+
 ## Business problem and decision
 High purchase probability does not imply high incremental response. The project separates those questions, estimates CATE, and allocates a constrained budget only where expected incremental contribution is positive.
 
@@ -46,6 +57,6 @@ At explicitly assumed $0.05 intervention cost and $50 contribution, the optimize
 The historical download host had disappeared; the publisher-owned Hugging Face mirror and published checksum preserved provenance. Rare control conversions required cautious interpretation. A complex causal learner did not establish superiority over predictive targeting, illustrating why paired held-out evaluation matters. Uniform costs permit exact sorting without unnecessary optimization infrastructure. Precomputed artifacts separate expensive research from a lightweight interactive demo.
 
 ## Boundaries
-Privacy sampling obscures original campaign lift; features cannot be given invented business meanings. No raw customer identity or actual cost/revenue data is available. Forest training is resource-capped and full-scale training was not executed. Deployment configuration is prepared; public URL is recorded only after verified hosting. Repository and live links, when verified, are stored in project-metadata.json.
+Privacy sampling obscures original campaign lift; features cannot be given invented business meanings. No raw customer identity or actual cost/revenue data is available. Forest training is resource-capped and full-scale training was not executed. Public demonstration deployed and browser-verified on 2026-11-25: [Open CausalTarget AI](https://causal-target-ai.streamlit.app/). All eight pages, zero-budget recalculation and a 100,000-row recommendation export were checked. Verified repository and live links are stored in project-metadata.json.
 
 Author: Ashbin Karki. AI-assisted portfolio development; no claimed employer deployment. Code MIT; Criteo data-derived artifacts CC BY-NC-SA 4.0.
